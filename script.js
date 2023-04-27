@@ -34,3 +34,17 @@ function getI(p, i) {
     if (i == 2) return p.charAt(1)
     return p.charAt(2)
 }
+
+function findInv() {
+    var ZuInvertierendeZahl = document.getElementById("inverse").value;
+    console.log(ZuInvertierendeZahl)
+    var ModuloZahl = document.getElementById("mod").value;
+    res = 0;
+    for(var i = 0; i<1000; i++) {
+        if ((ZuInvertierendeZahl * i) % ModuloZahl == 1) {
+            res = i;
+            break;
+        }
+    }
+    document.getElementById("modo").innerHTML = res
+}
