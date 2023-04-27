@@ -11,27 +11,36 @@
 
 <body>
     <div class="container">
-        <p>type in the value of eacht element, for example if element 1 = [1,2,3] -> type only 123</p>
-        <div class="input">
-            <input type="text" placeholder="first element" id="first">
-            <input type="text" placeholder="second element" id="second">
-            <input type="text" placeholder="third element" id="third">
-            <input type="text" placeholder="fourth element" id="fourth">
-            <input type="text" placeholder="fifth element" id="fifth">
-            <input type="text" placeholder="sixth element" id="sixth">
-            <button class="calculate" onclick="loadPerm()">calculate</button>
+        <div class="header">
+            <h1><i>This was made with love</i</h1>
         </div>
-        <div class="output">
-            <h1 id="outp">Here will be your output</h1>
+        <div class="table">
+            
+            <p>type in the value of eacht element, for example if element 1 = [1,2,3] -> type only 123</p>
+            <div class="input">
+                <input type="text" placeholder="first element " id="first">
+                <input type="text" placeholder="second element " id="second">
+                <input type="text" placeholder="third element" id="third">
+                <input type="text" placeholder="fourth element " id="fourth">
+                <input type="text" placeholder="fifth element " id="fifth">
+                <input type="text" placeholder="sixth element " id="sixth">
+                <button class="calculate" onclick="loadPerm()">calculate</button>
+            </div>
+            <div class="output">
+                <h1 id="outp">Here will be your output</h1>
+            </div>
         </div>
-        <p>to find x in : (y * x) mod z = 1</p>
-        <div class="inv">
-            <input type="text" placeholder="zu invertierende" id="inverse">
-            <input type="text" placeholder="modulo zahl" id="mod">
-            <button class="find" onclick="findInv()">find number</button>
-        </div>
-        <div class="modout">
-            <h1 id="modo">Here will be the result</h1>
+        <div class="table">
+
+            <p>to find x in : (y * x) mod z = 1</p>
+            <div class="inv">
+                <input type="text" placeholder="zu invertierende (y)" id="inverse">
+                <input type="text" placeholder="modulo zahl (z)" id="mod">
+                <button class="find" onclick="findInv()">find number</button>
+            </div>
+            <div class="modout">
+                <h1 id="modo">Here will be the result</h1>
+            </div>
         </div>
     </div>
 </body>
